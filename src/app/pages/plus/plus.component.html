@@ -1,3 +1,15 @@
+<h3>Plus</h3>
+<hr>
+<label for="txtValOne">Value One: </label>
+<input id="txtValOne" (keyup)="onChange($event, 'valOne')" placeholder="value one" >
+<br>
+<label for="txtValTwo">Value Two: </label>
+<input id="txtValTwo" (keyup)="onChange($event, 'valTwo')" placeholder="value two" >
+
 <p>
-  plus works!
+  1: {{!isValid(valOne) ? valOne : 'Invalid input'}}
+  <br>
+  2: {{!isValid(valTwo) ? valTwo : 'Invalid input'}}
+  <br>
+  Result: {{valOne + valTwo}}
 </p>
