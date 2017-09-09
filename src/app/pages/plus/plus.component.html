@@ -1,4 +1,4 @@
-<h3>Plus</h3>
+<h4>Plus</h4>
 <hr>
 <label for="txtValOne">Value One: </label>
 <input id="txtValOne" (keyup)="onChange($event, 'valOne')" placeholder="value one" >
@@ -7,9 +7,5 @@
 <input id="txtValTwo" (keyup)="onChange($event, 'valTwo')" placeholder="value two" >
 
 <p>
-  1: {{!isValid(valOne) ? valOne : 'Invalid input'}}
-  <br>
-  2: {{!isValid(valTwo) ? valTwo : 'Invalid input'}}
-  <br>
-  Result: {{valOne + valTwo}}
+  {{!isValid(valOne) ? valOne : 'null'}} + {{!isValid(valTwo) ? valTwo : 'null'}} = {{valOne + valTwo}}
 </p>

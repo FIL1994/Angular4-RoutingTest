@@ -1,15 +1,19 @@
 <header>
-  <nav>
+  <nav class="teal darken-3">
     <ul>
-      <li>
+      <li role="presentation"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">
         <a routerLink="/">Home</a>
       </li>
-      <li>
+      <li role="presentation"
+          routerLinkActive="active">
         <a routerLink="/plus">Plus</a>
       </li>
     </ul>
   </nav>
 </header>
-<h1>Routing Test</h1>
-<router-outlet></router-outlet>
-
+<div class="container">
+ <h2 class="center-align">Router Test</h2>
+  <router-outlet></router-outlet>
+</div>
